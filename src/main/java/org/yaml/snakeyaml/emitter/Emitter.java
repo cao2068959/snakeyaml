@@ -1152,7 +1152,7 @@ public final class Emitter implements Emitable {
       // Check for indicators.
       if (index == 0) {
         // Leading indicators are special characters.
-        if ("#,[]{}&*!|>'\"%@`".indexOf(c) != -1) {
+        if ("#,[]{}!|>'\"%@`".indexOf(c) != -1) {
           flowIndicators = true;
           blockIndicators = true;
         }

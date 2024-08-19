@@ -17,6 +17,7 @@ import java.util.Map;
 import java.util.TimeZone;
 import org.yaml.snakeyaml.emitter.Emitter;
 import org.yaml.snakeyaml.error.YAMLException;
+import org.yaml.snakeyaml.serializer.AliasNumberAnchorGenerator;
 import org.yaml.snakeyaml.serializer.AnchorGenerator;
 import org.yaml.snakeyaml.serializer.NumberAnchorGenerator;
 
@@ -301,7 +302,7 @@ public class DumperOptions {
   private Version version = null;
   private Map<String, String> tags = null;
   private Boolean prettyFlow = false;
-  private AnchorGenerator anchorGenerator = new NumberAnchorGenerator(0);
+  private AnchorGenerator anchorGenerator = new AliasNumberAnchorGenerator(0);
 
   /**
    * getter
